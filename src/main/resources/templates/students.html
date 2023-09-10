@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Students</title>
+    <style>
+        table,th,td{border: 1px solid black}
+    </style>
+</head>
+<body>
+<h1>View Student' OOP Marks</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>CA</th>
+        <th>Practical</th>
+        <th>Theory</th>
+        <th>Final</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="student: ${listStudents}">
+        <tr>
+            <td>[[${student.studentID}]]</td>
+            <td>[[${student.studentName}]]</td>
+            <td>[[${student.caMarks}]]</td>
+            <td>[[${student.practicalMarks}]]</td>
+            <td>[[${student.theoryMarks}]]</td>
+            <td>[[${student.finalMarks}]]</td>
+        </tr>
+    </th:block>
+    </tbody>
+
+</table>
+</body>
+</html>
