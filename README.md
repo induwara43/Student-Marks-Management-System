@@ -1,5 +1,5 @@
 # Student Marks Management System
-
+ 
 This project is a practical exam submission for a university course. It is a simple Student Marks Management System built using Spring Boot, Spring Data JPA, Thymeleaf, Bootstrap, and MySQL.
 
 ## Features
